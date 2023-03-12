@@ -18,6 +18,7 @@
         document.getElementById("previous").disabled = true;
         document.getElementById("previous").style.color = "gray";
         document.getElementById("previous").style.backgroundColor = "black";
+        document.getElementById("previous").style.borderColor = "gray";
         document.getElementById("1").style.color = "black";
         document.getElementById("1").style.backgroundColor = "red";
     }
@@ -64,6 +65,7 @@
                 if (page_number === 10) {
                     document.getElementById("next").style.color = "gray";
                     document.getElementById("next").style.backgroundColor = "black";
+                    document.getElementById("next").style.borderColor = "gray";
                     document.getElementById("next").disabled = true;
                     $("#next").prop("disabled", true);
                     $("#previous").prop("disabled", false);
@@ -87,7 +89,7 @@
                 if (page_number === 1){
                     document.getElementById("previous").style.color = "gray";
                     document.getElementById("previous").style.backgroundColor = "black";
-                    document.getElementById("next").disabled = true;
+                    document.getElementById("previous").style.borderColor = "gray";
                     $("#next").prop("disabled", true);
                     $("#previous").prop("disabled", false);
                 }
@@ -130,6 +132,7 @@
                 reset_css()
                 document.getElementById("previous").style.color = "gray";
                 document.getElementById("previous").style.backgroundColor = "black";
+                document.getElementById("previous").style.borderColor = "gray";
                 document.getElementById("1").style.color = "black";
                 document.getElementById("1").style.backgroundColor = "red";
             } else {
@@ -143,6 +146,7 @@
                 reset_css()
                 document.getElementById("next").style.color = "gray";
                 document.getElementById("next").style.backgroundColor = "black";
+                document.getElementById("next").style.borderColor = "gray";
                 document.getElementById("10").style.color = "black";
                 document.getElementById("10").style.backgroundColor = "red";
             
@@ -185,6 +189,7 @@
     buttons.forEach(button => {
         button.style.backgroundColor = 'black';
         button.style.color = 'red';
+        button.style.borderColor = 'red';
     });
 }
     function removeDivs() {
